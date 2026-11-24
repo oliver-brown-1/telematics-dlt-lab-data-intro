@@ -1,0 +1,29 @@
+[project]
+name = "dlt-lab-data"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "insurance-telematics>=0.2.1",
+    "ipython>=8.39.0",
+    "nbformat>=5.11.1",
+    "pandas>=2.3.3",
+    "plotly>=7.1.0",
+]
+
+
+[[tool.uv.index]]
+name = "sar"
+url = "https://artefacts.lloydsbanking.cloud/repository/pypi-osg-proxy/simple"
+trusted-host = ["artefacts.lloydsbanking.cloud"]
+default = true
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+]
+
+
+[tool.uv]
+native-tls = true
